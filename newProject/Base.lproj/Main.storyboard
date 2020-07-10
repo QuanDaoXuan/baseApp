@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,103 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="newProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-783" y="58"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Axv-rS-PmO">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="N14-Ny-vIt" customClass="SecondViewController" customModule="newProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Rm-sW-j8E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7dB-92-7XP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DmT-Wt-ny7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="58"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="9Mm-WQ-UuU">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="zJV-jX-R5D" customClass="HomeViewController" customModule="newProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W17-ke-HJr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="l9t-8f-5H7">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="l9t-8f-5H7" firstAttribute="top" secondItem="foP-tA-Hbo" secondAttribute="top" id="7RD-4n-gqj"/>
+                            <constraint firstItem="l9t-8f-5H7" firstAttribute="leading" secondItem="foP-tA-Hbo" secondAttribute="leading" id="clx-cX-bJI"/>
+                            <constraint firstItem="foP-tA-Hbo" firstAttribute="bottom" secondItem="l9t-8f-5H7" secondAttribute="bottom" id="gGl-uy-Dns"/>
+                            <constraint firstItem="foP-tA-Hbo" firstAttribute="trailing" secondItem="l9t-8f-5H7" secondAttribute="trailing" id="hxx-Ui-Crc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="foP-tA-Hbo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YW5-2e-rmE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895" y="66"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="5yv-6n-UbP">
+            <objects>
+                <viewController storyboardIdentifier="ContactViewController" id="Rh4-wZ-DFn" customClass="ContactViewController" customModule="newProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SRv-7E-vLv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact" translatesAutoresizingMaskIntoConstraints="NO" id="2zC-Do-r3w">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2zC-Do-r3w" firstAttribute="top" secondItem="wUU-fG-wRi" secondAttribute="top" id="BqX-Ep-CgF"/>
+                            <constraint firstItem="2zC-Do-r3w" firstAttribute="leading" secondItem="wUU-fG-wRi" secondAttribute="leading" id="TGs-qL-Of1"/>
+                            <constraint firstItem="wUU-fG-wRi" firstAttribute="trailing" secondItem="2zC-Do-r3w" secondAttribute="trailing" id="jGZ-Fb-spi"/>
+                            <constraint firstItem="wUU-fG-wRi" firstAttribute="bottom" secondItem="2zC-Do-r3w" secondAttribute="bottom" id="xy5-hT-IbG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wUU-fG-wRi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HLp-GU-eed" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1630" y="71"/>
+        </scene>
+        <!--Ranking View Controller-->
+        <scene sceneID="rcP-Fg-l9F">
+            <objects>
+                <viewController storyboardIdentifier="RankingViewController" id="Kki-Z6-eva" customClass="RankingViewController" customModule="newProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e8J-2v-yUq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0hT-xb-ETl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fpu-pn-LEN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2452" y="73"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="contact" width="1280" height="640"/>
+        <image name="home" width="925" height="876"/>
+    </resources>
 </document>

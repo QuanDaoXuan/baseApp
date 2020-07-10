@@ -5,19 +5,39 @@
 //  Created by resopt on 7/10/20.
 //  Copyright © 2020 resopt. All rights reserved.
 //
-
+import Rswift
 import UIKit
+//import Google_Material_Design_Icons_Swift
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
     var window: UIWindow?
-
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        let window = UIWindow(windowScene: windowScene)
+
+        // Home
+        let homeVC = R.storyboard.main.homeViewController()!
+        let homeNavi = UINavigationController(rootViewController: homeVC)
+        homeVC.title = "Home"
+        //contact
+        let contact = R.storyboard.main.contactViewController()!
+        let contactNavi = UINavigationController(rootViewController: contact)
+        contact.title = "Contract"
+        // Ranking
+        
+
+        self.window = window
+        window.makeKeyAndVisible()
+
+        let tabbarController = UITabBarController()
+        tabbarController.viewControllers = [homeNavi, contactNavi, homeNavi, homeNavi]
+        
+        window.rootViewController = tabbarController
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -47,7 +67,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-
 }
-
